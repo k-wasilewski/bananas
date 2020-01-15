@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  frontend-backend1:
+    image: spring-and-react
+    ports:
+      - "8083:8081"
+  backend2:
+    image: bananapp
+    ports:
+      - "8082:8080"
