@@ -15,6 +15,8 @@ services:
     image: bananapp:latest
     ports:
       - "8082:8080"
+    environment:
+      GOOGLE_APPLICATION_CREDENTIALS: /home/kuba/Desktop/bananas/settings/bananapp-264116-0483d7ffaad7.json
 
   db:
     image: mysql:5.7
