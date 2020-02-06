@@ -10,15 +10,11 @@ services:
       - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/wrojees09?useUnicode=true&characterEncoding=utf8&useSSL=false
       - MYSQL_USER=root
       - MYSQL_ROOT_PASSWORD=root
-
+    
   backend2:
     image: bananapp:latest
     ports:
       - "8082:8080"
-    environment:
-      GOOGLE_APPLICATION_CREDENTIALS: /home/kuba/Desktop/bananas/settings/bananapp-264116-0483d7ffaad7.json
-    volumes:
-      - "/home/kuba/Desktop/CodersLab/bananapp-264116/uploads/:/var/www/html"
 
   db:
     image: mysql:5.7
